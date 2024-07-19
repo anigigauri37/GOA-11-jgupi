@@ -10,4 +10,3 @@ print("father
 prin t (type,)name)
 (name  " sur name + " hoby + " country()
 (heht /* anni")
-
