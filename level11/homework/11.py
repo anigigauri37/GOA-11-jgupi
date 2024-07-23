@@ -45,3 +45,36 @@ while authorized != True:
 
 #Write a program that simulates a simple login system. Ask the user for a username and password, and if they enter "admin" and "password123", respectively, print "Login successful" using if-else
 
+registred_password = ""
+registred_username = ""
+
+while True:
+    print("1. signup")
+    print("2. login")
+    print("3. exit")
+
+    user_choice = int(input("enter your choice: "))
+
+    if user_choice == 1:
+         print("signup page")
+         registred_password = input("enter password: ")
+         registred_username = input("enter username: ")
+         print("you have succsesfully")
+
+    elif user_choice == 2:
+        print("signin page")
+        username_input = input("enter your username: ")
+        password_input = input("enter your password: ")
+
+        if username_input == registred_username and password_input == registred_password:
+            print("you succsesfully entered you account")
+            break
+        else:
+            print("try again")
+
+    elif user_choice == 3:
+        print("thanks for using our program")
+        break
+    else: 
+        print("invalid choice")
+
